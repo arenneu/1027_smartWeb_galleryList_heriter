@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heriter 쇼핑몰 페이지 실습</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/script.js"></script>
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="headerFrame">
+            <div id="addArea">
+                <div id="add"  class="frame_set flex-container">
+                    <div>지금 회원가입 하시면 총 16만원 쿠폰팩 즉시 발급</div>
+                    <div>자세히보기<span id="addArrow"></span></div>
+                </div>
+            </div>
+            <header id="header">
+                <div id="headerLnbArea">
+                    <ul id="headerLnb" class="frame_set flex-container">
+                        <li class="headerLi"><a href="#">ORDER</a></li>
+                        <li class="headerLi"><a href="#">LOGIN</a></li>
+                        <li class="headerLi"><a href="#">JOIN</a></li>
+                    </ul>
+                </div>
+                <!-- div#headerLnbArea -->
+                <div id="headerItemArea">
+                    <div id="headerItem" class="frame_set flex-container">
+                        <div id="headerLogo">
+                            <img src="../images/common/header_logo.png" width="136" alt="로고">
+                        </div>
+                        <!-- div#headerLogo -->
+                        <nav id="gnb">
+                            <img src="../images/common/btn_cart.png" width="45" alt="장바구니">
+                            
+                        </nav>
+                        <!-- nav#gnb -->
+                    </div>
+                </div>
+                <!-- div#headerItem -->
+            </header>
+            <!-- header#header -->
+        </div>
+        <!-- div#headerFrame -->
+
+        <main id="main">
+            <div id="contents" class="frame_set">
+                <h3>All</h3>
+                <!-- 10월 01일 갤러리 코드 참고 -->
+                <div class="gallery_Frame">
+                    <img src="../images/product_img/product_01.jpg" alt="상품" width="317" height="350">
+                    <h4>헤리터 시그니처 칼도마세트 (월넛)</h4>
+                    <p>월넛 색상의 헤리터 식과도&도마 세트</p>
+                    <div class="price">
+                        <span id="o_price">355000</span>
+                        <span id="o_price_won">원</span>
+                        <span id="dc_price">298000</span>
+                        <span class="won_word">원</span>
+                    </div>
+                    <div>RE : 5461</div>
+                </div>
+                <!-- div.gallery_frame -->
+            </div>
+            <!-- div#contents -->
+        </main>
+        <!-- main#main -->
+        <div id="footerFrame">
+            <footer id="footer">
+                <div id="footerLogo"></div>
+                <!-- div#footerLogo -->
+                <div id="copyright"></div>
+                <!-- div#copyright -->
+            </footer>
+            <!-- footer#footer -->
+            
+            <div id="footerLnb">
+
+            </div>
+            <!-- div#footerLnb -->
+            <hr>
+            <div id="CSInfo">
+
+            </div>
+            <!-- div#CSInfo -->
+            <hr>
+            <div id="companyAddr">
+
+            </div>
+            <!-- div#companyAddr -->
+        </div>
+        <!-- div#footerFrame -->
+    </div>
+    <!-- div#wrap -->
+</body>
+</html>

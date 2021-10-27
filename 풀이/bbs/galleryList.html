@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리 리스트 페이지</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+    <script src="../script/script.js"></script>
+</head>
+<body>
+    <div id="stickyArea">
+        <div id="joinEventArea">
+            <div id="joinEventWrap" class="flex-container">
+                <a href="#">
+                    지금 회원가입 하시면 총 16만원 쿠폰팩 즉시 발급                
+                </a>
+                <a href="#">자세히보기 →</a>
+            </div>
+            <!-- div#joinEventWrap -->
+        </div>
+        <!-- div#joinEventArea -->
+    
+        <div id="outerHeaderArea">
+            <header id="headerWrap" class="flex-container">
+                <div id="headerLogoArea">
+                    <a href="#">
+                        <img src="../images/headerLogo.png" alt="로고"
+                        width="140">
+                    </a>
+                </div>
+                <!-- div#headerLogoArea -->
+    
+                <div id="headerMenuArea">
+                    <nav id="headerLNB">
+                        <ul id="headerLnbMainMenu" class="flex-container">
+                            <li class="headerLnbMainLi">
+                                <a href="#">ORDER</a>
+                            </li>
+                            <li class="headerLnbMainLi">
+                                <a href="#">LOGIN</a>
+                            </li>
+                            <li class="headerLnbMainLi">
+                                <a href="#">JOIN</a>
+                            </li>
+                        </ul>
+                        <!-- ul#headerLnbMainMenu -->
+                    </nav>
+                    <!-- nav#headerLNB -->
+    
+                    <div id="cartNsideGNB" class="flex-container">
+                        <div id="cartLink">
+                            <span id="goodsCntInCart">0</span>
+                        </div>
+                        <!-- div#cartLink -->
+    
+                    </div>
+                    <!-- div#cartNsideGNB -->
+                </div>
+                <!-- div#headerMenuArea -->
+    
+            </header>
+            <!-- header#headerWrap -->
+        </div>
+        <!-- div#outerHeaderArea -->
+    </div>
+    <!-- div#stickeyArea -->
+
+    <!-- 사이드메뉴 링크 아이콘 (z-index로 인한 위치변경) -->
+    <div id="sideGNBLinkArea">
+        <div id="sideGNBLinkWrap">
+            <div id="sideGNBLink">
+                <span class="linkIcon1"></span>
+                <span class="linkIcon2"></span>
+                <span class="linkIcon3"></span>
+            </div>
+            <!-- div#sideGNBLink -->
+        </div>
+    </div>
+
+    <div id="sideMenuBG">
+
+        <div id="sideMenuArea">
+            <header id="sideMenuHeader">
+                
+                <p>
+                    지금 회원가입 하시면<br>
+                    <span>총 16만원 쿠폰팩 즉시 발급</span>해 드려요.<br>
+                    <a href="#">회원가입하러가기</a>
+                    <span id="arrowIcon"></span>
+                </p>
+                
+            </header>
+            <!-- div#sideMenuHeader -->
+
+            <nav id="sideLnbMenu">
+                <ul id="sideLnbMainMenu" class="flex-container">
+                    <li class="sideLnbMainLi"><a href="#">CART</a></li>
+                    <li class="sideLnbMainLi"><a href="#">ORDER</a></li>
+                    <li class="sideLnbMainLi"><a href="#">LOGIN</a></li>
+                </ul>
+            </nav>
+            <!-- nav#sideLnbMenu -->
+
+            <nav id="sideGnbMenu">
+                <ul id="sideGnbMainMenu">
+                    <li class="sideGnbMainLi"><a href="#">BRAND</a></li>
+                    <li class="sideGnbMainLi"><a href="#">SHOP</a>
+                        <ul id="sideGnbSubMenu">
+                            <li class="sideGnbSubLi"><a href="#">All</a></li>
+                            <li class="sideGnbSubLi"><a href="#">Knife</a></li>
+                            <li class="sideGnbSubLi"><a href="#">Cutting board</a></li>
+                            <li class="sideGnbSubLi"><a href="#">Fabric</a></li>
+                            <li class="sideGnbSubLi"><a href="#">ETC</a></li>
+                        </ul></li>
+                    <li class="sideGnbMainLi"><a href="#">WITH HERITER</a></li>
+                    <li class="sideGnbMainLi"><a href="#">NOTICE</a></li>
+                    <li class="sideGnbMainLi"><a href="#">Q&A</a></li>
+                    <li class="sideGnbMainLi"><a href="#">REVIEW</a></li>
+                </ul>
+            </nav>
+            <!-- nav#sideGnbMenu -->
+        </div>
+        <!-- div#sideMenuArea -->
+    </div>
+    <!-- div#sideMenuBG -->
+
+    <div id="wrap">
+        <div id="goods_part_name">All</div>
+
+        <main id="main" class="flex-container">
+
+            <div class="articleFrame">
+                <div class="articleImage">
+                    <img src="" alt="이미지" width="316">
+                </div>
+                <div class="goodsName"></div>
+                <div class="goodsDesc"></div>
+                <div class="price">
+                    <span class="originPrice numComma"></span>
+                    <span class="salePrice numComma"></span>
+                </div>
+                <div class="replyArea">
+                    <span class="reply numComma"></span>
+                </div>
+            </div>
+            <!-- div.articleFrame, JS 또는 백엔드 스크립트로 제작할 경우 필요없음 -->
+            
+            
+        </main>
+        <!-- main#main -->
+        <div id="pagingArea" class="flex-container">
+            <div class="pageBlockArea">
+                <a href="#">
+                    <img src="../images/btn_page_first.gif" alt="첫 페이지로">
+                </a>
+            </div>
+            <!-- div#pageBlockArea 첫 페이지 이동 -->
+
+            <div class="pageMoveArea">
+                <a href="#">
+                    <img src="../images/btn_page_prev.gif" alt="">
+                </a>
+            </div>
+            <!-- div#pageMoveArea 이전페이지 이동 -->
+
+            <!-- 페이지 리스트 시작 -->
+            <table id="pageListTbl">
+                <tbody>
+                    <tr>
+                        <td class="nowPage"><a href="#">1</a></td>
+                        <td><a href="#">2</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 페이지 리스트 끝 -->
+
+            <div class="pageMoveArea">
+                <a href="#">
+                    <img src="../images/btn_page_next.gif" alt="">
+                </a>
+            </div>
+            <!-- div#pageMoveArea 다음페이지 이동 -->
+
+            <div class="pageBlockArea">
+                <a href="#">
+                    <img src="../images/btn_page_last.gif" alt="마지막 페이지로">
+                </a>
+            </div>
+            <!-- div#pageBlockArea 마지막 페이지 이동 -->
+        </div>
+        <!-- div#pagingArea 페이지 나누기 영역 -->
+    </div>
+    <!-- div#wrap w1020 -->
+
+    
+    
+</body>
+</html>
